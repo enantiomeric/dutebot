@@ -1,13 +1,13 @@
 .container {
   width: 100vw;
-  height: 100vh;
   font-family: 'JetBrains Mono', monospace;
   font-size: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 80px 1fr 1fr;
-  background-color: #12263F;
+  grid-template-rows: 80px 300px 1000px auto;
+  background-color: #091421 ;
   color: #ffffff;
+  overflow-x: hidden;
 }
 .container div{
   border: 0px solid #ffffff;
@@ -28,6 +28,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 
 }
 .headerwhitespace{
@@ -36,6 +37,8 @@ html, body {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end:2;
+
+
 }
 
 .btnline{
@@ -45,26 +48,56 @@ html, body {
   grid-row-start: 1;
   grid-row-end:2;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-
+  border-radius: 0px 0px 40px 0px;
   color:#2C7BE5;
 }
 
 .headerbtn{
-  font-family: 'JetBrains Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
+    border-style:solid;
     background-color: #2C7BE5; 
-    border-radius: 20px;
-    border-width: 0px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #2C7BE5;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    height:50px ;
+    width:130px ;
+    font-weight: 550;
+    cursor:pointer;
+
 
 }
 .headerbtn:hover{
+  background-color: #205497;
+  border-color: #205497;
+}
+
+.headerbtn2{
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #152E4D;
+  border-radius: 10px;
+  border-style:solid;
+  border-width: 1px;
+  border-color: #2C7BE5;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height:50px ;
+  width:130px ;
+  cursor:pointer;
+}
+
+.headerbtn2:hover{
   background-color: #205497;
 }
 
@@ -74,9 +107,30 @@ html, body {
   grid-row-start: 2;
   grid-row-end:3;
   background-image: url("bg.gif");
-  opacity: 0.3;
+  background-size: cover;
+  opacity: 0.1;
+  height: 700px;
+  width: 2000px;
 }
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.footer{
+  background-color: #152E4D;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end:5;
+  height: 500px;
+
+}
+
+.content{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end:4;
+
 }
