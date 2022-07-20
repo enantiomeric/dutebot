@@ -1,12 +1,82 @@
-#clock {
-    font-size: 50px;
-    width: 900px;
-    margin: 200px;
+.container {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr;
+  background-color: #12263F;
+  color: #ffffff;
+}
+.container div{
+  border: 0px solid #ffffff;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.logo{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end:2;
+  background-color: #152E4D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.headerwhitespace{
+  background-color: #152E4D;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end:2;
+}
+
+.btnline{
+  background-color: #152E4D;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end:2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color:#2C7BE5;
+}
+
+.headerbtn{
+  font-family: 'JetBrains Mono', monospace;
+    background-color: #2C7BE5; 
+    border-radius: 20px;
+    border-width: 0px;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 
-  } 
+}
+.headerbtn:hover{
+  background-color: #205497;
+}
 
-body{
-    background-color: lightblue;
+.coolvideo{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end:3;
+  background-image: url("bg.gif");
+  opacity: 0.3;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
