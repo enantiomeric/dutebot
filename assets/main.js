@@ -3,3 +3,5 @@ $.each( $('*'), function() {
         console.log("Wide Element: ", $(this), "Width: ", $(this).width()); 
     } 
 });
+
+// document.addEventListener('contextmenu', event => event.preventDefault());
